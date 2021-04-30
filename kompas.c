@@ -36,10 +36,10 @@ double haversine(double naprava1[], double naprava2[]){ //po haversine formuli i
 int razdalja_skala(double naprava1[], double naprava2[]){ // z funkcijo f(x) = 11 - log_e(x), izračunamo skalo, kako velika mora bit ikonca na kompaasu (vecja stevilka =  vecja ikona), predlagam recimo, da za f(x) <= 4 sploh ne prikazujemo, to je crika 1000
     //vrne tip int, ker se ta vrednost uporablja sam za določanje skale, int je zaokrozen navzgor
     double x = haversine(naprava1, naprava2);
-    double y = 11 - log(x);
+    double y = 11 - 1.2* log(x);
     int size_icon = 0; // 0 da ne prikazujes
     if(y >= 4){
-    size_icon = ceil(11 - log(x - 10)) - 4;
+    size_icon = ceil(11 - 1.2* log(x - 10)) - 4;
     }
     return size_icon;
     //funkcijo lahko se malo boljse fitamo tistmo kar rabimo
@@ -47,7 +47,7 @@ int razdalja_skala(double naprava1[], double naprava2[]){ // z funkcijo f(x) = 1
     //double speed_inverse = 1/(naprava1[2]/SPEED);
     //y = 11 - speed_inverse*log(x);
     //if(y >= 4){
-    //    size_icon = ceil(11-speed_inverse*log(x-10)-4);
+    //    size_icon = ceil(11-speed_inverse* 1.2 * log(x-10)-4);
     //}
     
 }
@@ -64,8 +64,16 @@ double kompas_1(double naprava1[], double naprava2[]){
     double y = cos(lat1)*sin(lat2)-sin(lat1)*cos(lat2)*cos(delta_lon);
 
     double kompas = atan2(x, y);
-    return kompas; // vrne rezultat v radianih, na intervalu [-pi, pi]
+    return kompas; // vrne rezultat tako kot bi mogu, Sever je 0, vzhod je pi/2
+}
 
+double kompas(double naprava1_stara[], double nparava1, double naprava2[]){
+    double heading_n1 = kompas_1(naprava1_stara, naprava1); //heading naprave1 
+    double heading = kompas_1(naprava1, naprava2);  //kot med napravama 1 in 2, sever je fiksn
+    double kompas = abs(heading - heading_n1)
+    return kompas;
+    //da dobis poziciniras kompas, ga premaknes za -kot ki ga da kompas_1
+    //funkcija kompas ti da za kak je kot med naprav2 in smerjo v katero gre naprava1
 }
 
 
