@@ -63,8 +63,10 @@ double kompas_1(double naprava1[], double naprava2[]){
     double x = cos(lat2) * sin(delta_lon);
     double y = cos(lat1)*sin(lat2)-sin(lat1)*cos(lat2)*cos(delta_lon);
 
-    double kompas = atan2(x, y);
-    return kompas; // vrne rezultat tako kot bi mogu, Sever je 0, vzhod je pi/2
+    double kompas = atan2(y, x);
+    kompas = kompas - M_PI/2; 
+    kompas = kompas % 2*M_PI;
+    return kompas; // bi moglo vrnet tako kot si hotu
 }
 
 double kompas(double naprava1_stara[], double nparava1, double naprava2[]){
