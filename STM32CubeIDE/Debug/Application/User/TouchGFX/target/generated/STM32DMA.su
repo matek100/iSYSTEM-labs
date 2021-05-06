@@ -1,0 +1,27 @@
+core_cm7.h:1896:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
+core_cm7.h:1932:22:void __NVIC_DisableIRQ(IRQn_Type)	16	static,ignoring_inline_asm
+Types.hpp:81:5:touchgfx::colortype::colortype()	16	static
+Types.hpp:117:5:touchgfx::colortype::operator uint32_t() const	16	static
+DMA.hpp:63:13:touchgfx::DMA_Queue::~DMA_Queue()	16	static
+DMA.hpp:63:13:virtual touchgfx::DMA_Queue::~DMA_Queue()	16	static
+DMA.hpp:140:18:virtual void touchgfx::DMA_Interface::flush()	16	static
+DMA.hpp:220:13:touchgfx::DMA_Interface::~DMA_Interface()	16	static
+DMA.hpp:220:13:virtual touchgfx::DMA_Interface::~DMA_Interface()	16	static
+DMA.hpp:230:5:touchgfx::DMA_Interface::DMA_Interface(touchgfx::DMA_Queue&)	16	static
+STM32DMA.hpp:71:31:virtual touchgfx::DMAType STM32H7DMA::getDMAType()	16	static
+STM32DMA.hpp:107:18:virtual void STM32H7DMA::signalDMAInterrupt()	16	static
+HAL.hpp:109:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:148:10:void touchgfx::HAL::signalDMAInterrupt()	16	static
+STM32DMA.cpp:41:13:void DMA2D_XferCpltCallback(DMA2D_HandleTypeDef*)	16	static
+BlitOp.hpp:46:8:touchgfx::BlitOp::BlitOp()	16	static
+STM32DMA.cpp:48:1:STM32H7DMA::STM32H7DMA()	24	static
+STM32DMA.cpp:53:1:STM32H7DMA::~STM32H7DMA()	16	static
+STM32DMA.cpp:53:1:virtual STM32H7DMA::~STM32H7DMA()	16	static
+STM32DMA.cpp:59:6:virtual void STM32H7DMA::initialize()	24	static
+STM32DMA.cpp:73:17:uint32_t STM32H7DMA::getChromARTInputFormat(touchgfx::Bitmap::BitmapFormat)	24	static
+STM32DMA.cpp:108:17:uint32_t STM32H7DMA::getChromARTOutputFormat(touchgfx::Bitmap::BitmapFormat)	24	static
+STM32DMA.cpp:141:16:virtual touchgfx::BlitOperations STM32H7DMA::getBlitCaps()	16	static
+STM32DMA.cpp:162:6:virtual void STM32H7DMA::setupDataCopy(const touchgfx::BlitOp&)	48	static,ignoring_inline_asm
+STM32DMA.cpp:322:6:virtual void STM32H7DMA::setupDataFill(const touchgfx::BlitOp&)	32	static
+DMA.hpp:89:7:touchgfx::LockFreeDMA_Queue::~LockFreeDMA_Queue()	16	static
+DMA.hpp:89:7:virtual touchgfx::LockFreeDMA_Queue::~LockFreeDMA_Queue()	16	static

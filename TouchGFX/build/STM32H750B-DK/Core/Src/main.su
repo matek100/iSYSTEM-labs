@@ -1,0 +1,6 @@
+main.c:843:13:TouchGFX_Task	8	static
+main.c:861:6:StartGPS_RX	8	static
+main.c:240:6:SystemClock_Config	328	static
+main.c:129:5:main	168	static
+main.c:967:6:HAL_TIM_PeriodElapsedCallback	0	static
+main.c:984:6:Error_Handler	0	static

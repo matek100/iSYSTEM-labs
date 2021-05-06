@@ -1,0 +1,39 @@
+MCUInstrumentation.hpp:43:13:touchgfx::MCUInstrumentation::~MCUInstrumentation()	16	static
+MCUInstrumentation.hpp:43:13:virtual touchgfx::MCUInstrumentation::~MCUInstrumentation()	16	static
+MCUInstrumentation.hpp:70:18:virtual void touchgfx::MCUInstrumentation::setMCUActive(bool)	24	static
+MCUInstrumentation.hpp:88:22:virtual uint32_t touchgfx::MCUInstrumentation::getCCConsumed()	16	static
+MCUInstrumentation.hpp:98:18:virtual void touchgfx::MCUInstrumentation::setCCConsumed(uint32_t)	16	static
+HAL.hpp:100:13:touchgfx::HAL::~HAL()	16	static
+HAL.hpp:100:13:virtual touchgfx::HAL::~HAL()	16	static
+HAL.hpp:109:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:123:18:virtual void touchgfx::HAL::setDisplayOrientation(touchgfx::DisplayOrientation)	16	static
+HAL.hpp:281:28:virtual touchgfx::BlitOperations touchgfx::HAL::getBlitCaps()	16	static
+HAL.hpp:538:18:virtual void touchgfx::HAL::backPorchExited()	16	static
+HAL.hpp:570:18:virtual bool touchgfx::HAL::sampleKey(uint8_t&)	16	static
+HAL.hpp:617:18:virtual void touchgfx::HAL::setFrameBufferStartAddresses(void*, void*, void*)	24	static
+HAL.hpp:686:10:void touchgfx::HAL::setMCUInstrumentation(touchgfx::MCUInstrumentation*)	16	static
+HAL.hpp:697:10:void touchgfx::HAL::enableMCULoadCalculation(bool)	16	static
+HAL.hpp:760:30:virtual touchgfx::FlashDataReader* touchgfx::HAL::getFlashDataReader() const	16	static
+HAL.hpp:909:18:virtual void touchgfx::HAL::taskDelay(uint16_t)	16	static
+HAL.hpp:936:22:virtual uint16_t touchgfx::HAL::getTFTCurrentLine()	16	static
+HAL.hpp:947:21:virtual touchgfx::DMAType touchgfx::HAL::getDMAType()	16	static
+HAL.hpp:1057:18:virtual void touchgfx::HAL::performDisplayOrientationChange()	16	static
+TouchGFXGeneratedHAL.hpp:104:18:virtual void TouchGFXGeneratedHAL::flushFrameBuffer()	16	static
+TouchGFXGeneratedHAL.hpp:28:7:TouchGFXGeneratedHAL::~TouchGFXGeneratedHAL()	16	static
+TouchGFXGeneratedHAL.hpp:28:7:virtual TouchGFXGeneratedHAL::~TouchGFXGeneratedHAL()	16	static
+TouchGFXHAL.hpp:110:18:virtual void TouchGFXHAL::flushFrameBuffer()	16	static
+core_cm7.h:2427:22:void SCB_CleanInvalidateDCache()	24	static,ignoring_inline_asm
+TouchGFXHAL.cpp:28:6:void TouchGFXHAL::initialize()	16	static
+TouchGFXHAL.cpp:42:6:virtual void TouchGFXHAL::taskEntry()	16	static
+TouchGFXHAL.cpp:75:11:virtual uint16_t* TouchGFXHAL::getTFTFrameBuffer() const	16	static
+TouchGFXHAL.cpp:90:6:virtual void TouchGFXHAL::setTFTFrameBuffer(uint16_t*)	16	static
+TouchGFXHAL.cpp:107:6:virtual void TouchGFXHAL::flushFrameBuffer(const touchgfx::Rect&)	16	static
+TouchGFXHAL.cpp:129:6:virtual void TouchGFXHAL::configureInterrupts()	16	static
+TouchGFXHAL.cpp:142:6:virtual void TouchGFXHAL::enableInterrupts()	16	static
+TouchGFXHAL.cpp:155:6:virtual void TouchGFXHAL::disableInterrupts()	16	static
+TouchGFXHAL.cpp:169:6:virtual void TouchGFXHAL::enableLCDControllerInterrupt()	16	static
+TouchGFXHAL.cpp:181:19:long int IdleTaskHook(void*)	16	static
+TouchGFXHAL.hpp:32:7:TouchGFXHAL::~TouchGFXHAL()	16	static
+TouchGFXHAL.hpp:32:7:virtual TouchGFXHAL::~TouchGFXHAL()	16	static
+CortexMMCUInstrumentation.hpp:20:7:touchgfx::CortexMMCUInstrumentation::~CortexMMCUInstrumentation()	16	static
+CortexMMCUInstrumentation.hpp:20:7:virtual touchgfx::CortexMMCUInstrumentation::~CortexMMCUInstrumentation()	16	static

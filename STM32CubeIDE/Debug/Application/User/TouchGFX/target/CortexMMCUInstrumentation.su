@@ -1,0 +1,11 @@
+MCUInstrumentation.hpp:43:13:touchgfx::MCUInstrumentation::~MCUInstrumentation()	16	static
+MCUInstrumentation.hpp:43:13:virtual touchgfx::MCUInstrumentation::~MCUInstrumentation()	16	static
+MCUInstrumentation.hpp:70:18:virtual void touchgfx::MCUInstrumentation::setMCUActive(bool)	24	static
+MCUInstrumentation.hpp:88:22:virtual uint32_t touchgfx::MCUInstrumentation::getCCConsumed()	16	static
+MCUInstrumentation.hpp:98:18:virtual void touchgfx::MCUInstrumentation::setCCConsumed(uint32_t)	16	static
+CortexMMCUInstrumentation.cpp:6:6:virtual void touchgfx::CortexMMCUInstrumentation::init()	16	static
+CortexMMCUInstrumentation.cpp:26:14:virtual unsigned int touchgfx::CortexMMCUInstrumentation::getElapsedUS(unsigned int, unsigned int, unsigned int)	24	static
+CortexMMCUInstrumentation.cpp:31:14:virtual unsigned int touchgfx::CortexMMCUInstrumentation::getCPUCycles()	16	static
+CortexMMCUInstrumentation.cpp:36:6:virtual void touchgfx::CortexMMCUInstrumentation::setMCUActive(bool)	24	static
+CortexMMCUInstrumentation.hpp:20:7:touchgfx::CortexMMCUInstrumentation::~CortexMMCUInstrumentation()	16	static
+CortexMMCUInstrumentation.hpp:20:7:virtual touchgfx::CortexMMCUInstrumentation::~CortexMMCUInstrumentation()	16	static
